@@ -1,0 +1,10 @@
+traffic_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: ma-commute-traffic-analysis
+      dataset: traffic
+      location: us-central1
+      threads: 4
