@@ -1,0 +1,6 @@
+segment_id,road,direction,seq,lat,lon
+provo_500w_sb_01,N 500 W,SB,1,40.234496,-111.667627
+i15_nb_01,I-15,NB,2,40.283025,-111.724638
+i15_nb_02,I-15,NB,3,40.333436,-111.742765
+pioneer_xing_wb_01,Pioneer Crossing,WB,4,40.372565,-111.908930
+pony_express_wb_01,Pony Express Parkway,WB,5,40.362064,-111.942471
