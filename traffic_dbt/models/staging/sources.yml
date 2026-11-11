@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: traffic_raw
+    schema: traffic_raw
+    tables:
+      - name: readings_raw

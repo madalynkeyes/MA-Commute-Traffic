@@ -1,0 +1,32 @@
+[0m11:10:55.859383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001774F62F040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177515B2340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177515B2100>]}
+
+
+============================== 11:10:55.859383 | f2475800-f097-4b24-a13a-d69ee83f994d ==============================
+[0m11:10:55.859383 [info ] [MainThread]: Running with dbt=1.10.23
+[0m11:10:55.859383 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'target_path': 'None', 'invocation_command': 'dbt init traffic_dbt', 'version_check': 'True', 'empty': 'None', 'printer_width': '80', 'quiet': 'False', 'log_path': 'logs', 'partial_parse': 'True', 'warn_error': 'None', 'write_json': 'True', 'log_format': 'default', 'no_print': 'None', 'introspect': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\madal\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m11:10:56.548649 [warn ] [MainThread]: [[33mWARNING[0m]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. Please upgrade to a newer supported version of dbt for new projects: https://docs.getdbt.com/docs/dbt-versions?utm_source=dbt-cli
+[0m11:10:56.548649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'f2475800-f097-4b24-a13a-d69ee83f994d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177515B2340>]}
+[0m11:10:56.548649 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\madal\.dbt
+[0m11:10:56.572759 [debug] [MainThread]: Starter project path: C:\Users\madal\CS452\MA-Commute-Traffic\.venv\lib\site-packages\dbt\include\starter_project
+[0m11:10:56.745638 [info ] [MainThread]: 
+Your new dbt project "traffic_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:10:56.745638 [info ] [MainThread]: Setting up your profile.
+[0m11:11:45.795774 [info ] [MainThread]: Profile traffic_dbt written to C:\Users\madal\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:11:45.813180 [debug] [MainThread]: Command `dbt init` succeeded at 11:11:45.813180 after 50.09 seconds
+[0m11:11:45.817573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001774F62F040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017773E2FF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017773E2F790>]}
+[0m11:11:45.820177 [debug] [MainThread]: Flushing usage events
+[0m11:11:46.236305 [debug] [MainThread]: An error was encountered while trying to flush usage events

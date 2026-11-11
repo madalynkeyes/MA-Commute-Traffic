@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: fct_readings
+    description: One row per segment per poll, deduplicated.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [segment_id, collected_at]
+    columns:
+      - name: segment_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('segments')
+              field: segment_id
+      - name: collected_at
+        tests:
+          - not_null
+      - name: current_speed_mph
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+              where: "NOT is_error"
+      - name: confidence
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+              where: "NOT is_error"
+      - name: direction
+        tests:
+          - accepted_values:
+              values: ['NB', 'SB', 'EB', 'WB']

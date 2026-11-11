@@ -4,3 +4,6 @@ __pycache__/
 *.pyc
 segments_check.geojson
 data/
+traffic_dbt/target/
+traffic_dbt/logs/
+traffic_dbt/dbt_packages/
