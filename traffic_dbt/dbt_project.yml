@@ -36,3 +36,10 @@ models:
       +materialized: view
     marts:
       +materialized: table
+
+seeds:
+  traffic_dbt:
+    segments:
+      +column_types:
+        active_from: date
+        active_to: date

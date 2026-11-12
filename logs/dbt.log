@@ -30,3 +30,20 @@ Happy modeling!
 [0m11:11:45.817573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001774F62F040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017773E2FF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017773E2F790>]}
 [0m11:11:45.820177 [debug] [MainThread]: Flushing usage events
 [0m11:11:46.236305 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:16:21.156877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287BBB7F0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287BCB0EF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287BCB0ED00>]}
+
+
+============================== 17:16:21.156877 | 3ef39b74-b04e-4db2-b948-c93944295aca ==============================
+[0m17:16:21.156877 [info ] [MainThread]: Running with dbt=1.10.23
+[0m17:16:21.172952 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'invocation_command': 'dbt build', 'target_path': 'None', 'version_check': 'True', 'empty': 'False', 'printer_width': '80', 'quiet': 'False', 'log_path': 'logs', 'partial_parse': 'True', 'warn_error': 'None', 'write_json': 'True', 'no_print': 'None', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\madal\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m17:16:21.172952 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m17:16:21.172952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '3ef39b74-b04e-4db2-b948-c93944295aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287BBB7F0A0>]}
+[0m17:16:21.172952 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\madal\CS452\MA-Commute-Traffic\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:16:21.172952 [debug] [MainThread]: Command `dbt build` failed at 17:16:21.172952 after 0.10 seconds
+[0m17:16:21.172952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287BBB7F0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287BCB0EDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287BCB0EF10>]}
+[0m17:16:21.172952 [debug] [MainThread]: Flushing usage events
+[0m17:16:21.460096 [debug] [MainThread]: An error was encountered while trying to flush usage events

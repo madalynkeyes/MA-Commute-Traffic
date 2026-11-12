@@ -48,7 +48,7 @@ def upload_to_gcs(local_path, bucket_name, blob_name):
 
 def main():
     collected_at = datetime.now(timezone.utc)
-    segments = load_segments(SEGMENTS_PATH)
+    segments = [s for s in load_segments(SEGMENTS_PATH) if not s["active_to"]]
 
     records = []
     succeeded, failed = 0, 0

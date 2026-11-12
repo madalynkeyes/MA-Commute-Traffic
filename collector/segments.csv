@@ -1,6 +1,38 @@
-segment_id,road,direction,seq,lat,lon
-provo_500w_sb_01,N 500 W,SB,1,40.234496,-111.667627
-i15_nb_01,I-15,NB,2,40.283025,-111.724638
-i15_nb_02,I-15,NB,3,40.333436,-111.742765
-pioneer_xing_wb_01,Pioneer Crossing,WB,4,40.372565,-111.908930
-pony_express_wb_01,Pony Express Parkway,WB,5,40.362064,-111.942471
+segment_id,trip,road,direction,seq,lat,lon,active_from,active_to
+provo_800n_wb_01,to_em,E 800 N,WB,1,40.244395,-111.658234,2026-11-12,
+provo_800n_wb_02,to_em,W 800 N,WB,2,40.244352,-111.663564,2026-11-12,
+provo_500w_sb_01,to_em,N 500 W,SB,3,40.234472,-111.667646,2026-11-10,
+provo_center_wb_01,to_em,W Center St,WB,4,40.233843,-111.673747,2026-11-12,
+i15_nb_03,to_em,I-15,NB,5,40.239127,-111.689668,2026-11-12,
+i15_nb_04,to_em,I-15,NB,6,40.281053,-111.723460,2026-11-12,
+i15_nb_05,to_em,I-15,NB,7,40.305009,-111.725549,2026-11-12,
+i15_nb_06,to_em,I-15,NB,8,40.319717,-111.726071,2026-11-12,
+i15_nb_07,to_em,I-15,NB,9,40.336509,-111.747657,2026-11-12,
+i15_nb_08,to_em,I-15,NB,10,40.372987,-111.806634,2026-11-12,
+pioneer_xing_wb_02,to_em,Pioneer Crossing,WB,11,40.377769,-111.830193,2026-11-12,
+pioneer_xing_wb_03,to_em,Pioneer Crossing,WB,12,40.373618,-111.842232,2026-11-12,
+pioneer_xing_wb_04,to_em,Pioneer Crossing,WB,13,40.372889,-111.912825,2026-11-12,
+redwood_sb_01,to_em,N Redwood Rd,SB,14,40.369547,-111.916468,2026-11-12,
+pony_express_wb_02,to_em,Pony Express Parkway,WB,15,40.362133,-111.932019,2026-11-12,
+lehi_fairfield_wb_01,to_em,Lehi-Fairfield Rd,WB,16,40.362204,-111.967985,2026-11-12,
+pony_express_wb_03,to_em,E Pony Express Pkwy,WB,17,40.356004,-111.991173,2026-11-12,
+pony_express_nb_01,to_provo,Pony Express Parkway,NB,1,40.308324,-112.014034,2026-11-12,
+pioneer_xing_eb_01,to_provo,Pioneer Crossing,EB,2,40.372666,-111.912936,2026-11-12,
+pioneer_xing_eb_02,to_provo,Pioneer Crossing,EB,3,40.373356,-111.842070,2026-11-12,
+pioneer_xing_eb_03,to_provo,Pioneer Crossing,EB,4,40.377501,-111.830340,2026-11-12,
+i15_sb_01,to_provo,I-15,SB,5,40.372639,-111.806707,2026-11-12,
+i15_sb_02,to_provo,I-15,SB,6,40.336262,-111.747900,2026-11-12,
+i15_sb_03,to_provo,I-15,SB,7,40.319636,-111.726557,2026-11-12,
+i15_sb_04,to_provo,I-15,SB,8,40.304960,-111.726212,2026-11-12,
+i15_sb_05,to_provo,I-15,SB,9,40.285488,-111.725823,2026-11-12,
+i15_sb_06,to_provo,I-15,SB,10,40.280870,-111.723872,2026-11-12,
+i15_sb_07,to_provo,I-15,SB,11,40.261626,-111.707060,2026-11-12,
+i15_sb_08,to_provo,I-15,SB,12,40.238956,-111.690044,2026-11-12,
+provo_center_sb_01,to_provo,W Center St,SB,13,40.232903,-111.684580,2026-11-12,
+provo_center_eb_01,to_provo,W Center St,EB,14,40.233717,-111.673554,2026-11-12,
+provo_500w_nb_01,to_provo,N 500 W,NB,15,40.234480,-111.667411,2026-11-12,
+provo_800n_eb_01,to_provo,E 800 N,EB,16,40.244323,-111.658228,2026-11-12,
+i15_nb_01,to_em,I-15,NB,2,40.283025,-111.724638,2026-11-10,2026-11-11
+i15_nb_02,to_em,I-15,NB,3,40.333436,-111.742765,2026-11-10,2026-11-11
+pioneer_xing_wb_01,to_em,Pioneer Crossing,WB,4,40.372565,-111.908930,2026-11-10,2026-11-11
+pony_express_wb_01,to_em,Pony Express Parkway,WB,5,40.362064,-111.942471,2026-11-10,2026-11-11

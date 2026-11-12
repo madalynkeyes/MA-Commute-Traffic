@@ -18,7 +18,7 @@ segments AS (
 )
 
 SELECT
-    deduped.*,segments.road, segments.direction, segments.seq, 
+    deduped.*,segments.road,segments.trip, segments.direction, segments.seq, 
     DATETIME(TIMESTAMP_SECONDS(900 * DIV(UNIX_SECONDS(collected_at), 900)), 'America/Denver') AS poll_slot_mt,
     DATE(collected_at_mt) AS collected_date_mt,
     EXTRACT(HOUR FROM collected_at_mt) AS hour_mt,

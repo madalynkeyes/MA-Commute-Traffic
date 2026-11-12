@@ -15,10 +15,11 @@ SELECT
     seq,
     day_of_week,
     TIME(poll_slot_mt) AS time_slot,
+    trip,
     COUNT(*) AS n_readings,
     ROUND(AVG(current_speed_mph), 1) AS avg_speed_mph,
     ROUND(AVG(free_flow_speed_mph),1) AS avg_free_flow_mph,
     ROUND(AVG(congestion_ratio), 2) AS avg_congestion_ratio,
     ROUND(AVG(current_travel_time_s - free_flow_travel_time_s),0) AS avg_delay_s
 FROM clean
-GROUP BY segment_id, road, direction, seq, day_of_week, time_slot
+GROUP BY segment_id, road, direction, seq, day_of_week, time_slot, trip
